@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Techoi's Blog]]></title><description><![CDATA[tech, code, build and life]]></description><link>https://techoi.github.io/</link><generator>RSS for Node</generator><lastBuildDate>Fri, 15 Feb 2019 09:40:23 GMT</lastBuildDate><item><title><![CDATA[New Beginnings]]></title><description><![CDATA[Far far away, behind the word mountains, far from the countries Vokalia and
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Techoi's Blog]]></title><description><![CDATA[tech, code, build and life]]></description><link>https://techoi.github.io/</link><generator>RSS for Node</generator><lastBuildDate>Fri, 15 Feb 2019 09:51:43 GMT</lastBuildDate><item><title><![CDATA[No title]]></title><description><![CDATA[첫 시작치고 괜찮다! 이게 뭔가 싶지만 일단 시작을 했다는데 의의를 두자ㅎ 기존에 사용하던 tistory와 어떻게 나눠서 가져갈지는 모르겠지만 Gatsby가 react로 되어 있고 graphQL…]]></description><link>https://techoi.github.io//first-meesage/</link><guid isPermaLink="false">https://techoi.github.io//first-meesage/</guid><content:encoded>&lt;h1&gt;첫 시작치고 괜찮다!&lt;/h1&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;이게 뭔가 싶지만&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;일단 시작을 했다는데 의의를 두자ㅎ&lt;/p&gt;
+&lt;p&gt;기존에 사용하던 tistory와 어떻게 나눠서 가져갈지는 모르겠지만&lt;/p&gt;
+&lt;p&gt;Gatsby가 react로 되어 있고 graphQL로 되어 있으니깐 이걸 가지고 블로그를 꾸려가면 자연스레 사이드 프로젝트에 대한 준비가 될 것이라는 생각에 일단 시작부터 하고 봤다… &lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;내 스스로를 지켜봐....야지....&lt;/code&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[New Beginnings]]></title><description><![CDATA[Far far away, behind the word mountains, far from the countries Vokalia and
 Consonantia, there live the blind texts. Separated they live in…]]></description><link>https://techoi.github.io//hi-folks/</link><guid isPermaLink="false">https://techoi.github.io//hi-folks/</guid><pubDate>Thu, 28 May 2015 22:40:32 GMT</pubDate><content:encoded>&lt;p&gt;Far far away, behind the word mountains, far from the countries Vokalia and
 Consonantia, there live the blind texts. Separated they live in Bookmarksgrove
 right at the coast of the Semantics, a large language ocean. A small river named
