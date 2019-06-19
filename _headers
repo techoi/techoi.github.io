@@ -9,38 +9,44 @@
 /sw.js
   Cache-Control: no-cache
 /offline-plugin-app-shell-fallback/
-  Link: </webpack-runtime-b71681defb0b0c93ee04.js>; rel=preload; as=script
+  Link: </webpack-runtime-0b0c92f683a468a500d6.js>; rel=preload; as=script
   Link: </component---node-modules-gatsby-plugin-offline-app-shell-js-237ab0d1122d22ef9f47.js>; rel=preload; as=script
 /404
-  Link: </webpack-runtime-b71681defb0b0c93ee04.js>; rel=preload; as=script
+  Link: </webpack-runtime-0b0c92f683a468a500d6.js>; rel=preload; as=script
   Link: </0-c39ae294421d3bd766d0.js>; rel=preload; as=script
 /tags
-  Link: </webpack-runtime-b71681defb0b0c93ee04.js>; rel=preload; as=script
+  Link: </webpack-runtime-0b0c92f683a468a500d6.js>; rel=preload; as=script
   Link: </0-c39ae294421d3bd766d0.js>; rel=preload; as=script
 /categories
-  Link: </webpack-runtime-b71681defb0b0c93ee04.js>; rel=preload; as=script
-  Link: </0-c39ae294421d3bd766d0.js>; rel=preload; as=script
-/posts/the-beginning
-  Link: </webpack-runtime-b71681defb0b0c93ee04.js>; rel=preload; as=script
+  Link: </webpack-runtime-0b0c92f683a468a500d6.js>; rel=preload; as=script
   Link: </0-c39ae294421d3bd766d0.js>; rel=preload; as=script
 /pages/about/
-  Link: </webpack-runtime-b71681defb0b0c93ee04.js>; rel=preload; as=script
+  Link: </webpack-runtime-0b0c92f683a468a500d6.js>; rel=preload; as=script
   Link: </0-c39ae294421d3bd766d0.js>; rel=preload; as=script
 /pages/contacts/
-  Link: </webpack-runtime-b71681defb0b0c93ee04.js>; rel=preload; as=script
+  Link: </webpack-runtime-0b0c92f683a468a500d6.js>; rel=preload; as=script
+  Link: </0-c39ae294421d3bd766d0.js>; rel=preload; as=script
+/posts/the-beginning
+  Link: </webpack-runtime-0b0c92f683a468a500d6.js>; rel=preload; as=script
+  Link: </0-c39ae294421d3bd766d0.js>; rel=preload; as=script
+/posts/first-draft
+  Link: </webpack-runtime-0b0c92f683a468a500d6.js>; rel=preload; as=script
   Link: </0-c39ae294421d3bd766d0.js>; rel=preload; as=script
 /tag/blog
-  Link: </webpack-runtime-b71681defb0b0c93ee04.js>; rel=preload; as=script
+  Link: </webpack-runtime-0b0c92f683a468a500d6.js>; rel=preload; as=script
   Link: </0-c39ae294421d3bd766d0.js>; rel=preload; as=script
 /tag/gatsby
-  Link: </webpack-runtime-b71681defb0b0c93ee04.js>; rel=preload; as=script
+  Link: </webpack-runtime-0b0c92f683a468a500d6.js>; rel=preload; as=script
   Link: </0-c39ae294421d3bd766d0.js>; rel=preload; as=script
 /tag/github-io
-  Link: </webpack-runtime-b71681defb0b0c93ee04.js>; rel=preload; as=script
+  Link: </webpack-runtime-0b0c92f683a468a500d6.js>; rel=preload; as=script
+  Link: </0-c39ae294421d3bd766d0.js>; rel=preload; as=script
+/category/design-culture
+  Link: </webpack-runtime-0b0c92f683a468a500d6.js>; rel=preload; as=script
   Link: </0-c39ae294421d3bd766d0.js>; rel=preload; as=script
 /category/diary
-  Link: </webpack-runtime-b71681defb0b0c93ee04.js>; rel=preload; as=script
+  Link: </webpack-runtime-0b0c92f683a468a500d6.js>; rel=preload; as=script
   Link: </0-c39ae294421d3bd766d0.js>; rel=preload; as=script
 /
-  Link: </webpack-runtime-b71681defb0b0c93ee04.js>; rel=preload; as=script
+  Link: </webpack-runtime-0b0c92f683a468a500d6.js>; rel=preload; as=script
   Link: </0-c39ae294421d3bd766d0.js>; rel=preload; as=script
