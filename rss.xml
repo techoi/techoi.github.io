@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[As long as we dare to dream and do not get in the way of ourseleves, anything is possible]]></title><description><![CDATA[Read, Inspired and Write.]]></description><link>https://techoi.github.io</link><generator>RSS for Node</generator><lastBuildDate>Fri, 21 Jun 2019 06:10:14 GMT</lastBuildDate><item><title><![CDATA[Git key 생성 및 계정 설정 분리하기]]></title><description><![CDATA[나만의 깃 세팅 구성하기]]></description><link>https://techoi.github.io/posts/seperate-git-user-with-key</link><guid isPermaLink="false">https://techoi.github.io/posts/seperate-git-user-with-key</guid><pubDate>Wed, 19 Jun 2019 20:53:56 GMT</pubDate><content:encoded>&lt;h3&gt;나만의 깃 세팅 구성하기&lt;/h3&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[As long as we dare to dream and do not get in the way of ourseleves, anything is possible]]></title><description><![CDATA[Read, Inspired and Write.]]></description><link>https://techoi.github.io</link><generator>RSS for Node</generator><lastBuildDate>Fri, 21 Jun 2019 07:58:28 GMT</lastBuildDate><item><title><![CDATA[Git key 생성 및 계정 설정 분리하기]]></title><description><![CDATA[나만의 깃 세팅 구성하기]]></description><link>https://techoi.github.io/posts/seperate-git-user-with-key</link><guid isPermaLink="false">https://techoi.github.io/posts/seperate-git-user-with-key</guid><pubDate>Wed, 19 Jun 2019 20:53:56 GMT</pubDate><content:encoded>&lt;h3&gt;나만의 깃 세팅 구성하기&lt;/h3&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;em&gt;블로그를 작성할 시간을 내는게 정말 쉽지 않다. 그래도 자주 써보자는 생각이 다시 들게 해준 상황 덕분에 정리한다&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;본론으로 바로 들어간다.&lt;/p&gt;
@@ -13,7 +13,9 @@
 &lt;li&gt;특정 폴더에서만 &lt;code class=&quot;language-text&quot;&gt;2&lt;/code&gt;에서 설정한 config 파일을 사용하도록 설정&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2&gt;1. 계정별 ssh 키 생성&lt;/h2&gt;
-&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;아무 설정도 애초에 없었다고 생각하자! 만약 특정 설정이 있었다면 지우고 하면 됨&lt;/code&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;아무 설정도 애초에 없었다고 가정하고 간다. 만약 특정 설정이 있었다면 지우고 하면 됨&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;  $ cd ~/.ssh
   $ ssh-keygen -t rsa -C &amp;quot;username@github.com&amp;quot; // 계정 이름
   $ Enter file in ....
@@ -23,7 +25,9 @@
 &lt;p&gt;위의 방식을 반복해서 계정마다 키를 생성한다.&lt;/p&gt;
 &lt;p&gt;SSH 키 관리는 &lt;code class=&quot;language-text&quot;&gt;~/.ssh/config&lt;/code&gt; 파일에서&lt;/p&gt;
 &lt;p&gt;자세한 내용은 &lt;a href=&quot;%22https://blog.outsider.ne.kr/1448%22&quot;&gt;Outsider님의 블로그&lt;/a&gt; 에 잘 정리되어 있다.&lt;/p&gt;
-&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;ssh를 새로 만들었으니깐, 전역으로 사용할 user 정보를 가질 계정 설정도 추가로  해주면 됨&lt;/code&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;ssh를 새로 만들었으니깐, 전역으로 사용할 user 정보를 가질 계정 설정도 추가로  해주면 됨&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h2&gt;2. 특정 폴더를 위한 &lt;code class=&quot;language-text&quot;&gt;.gitconfig&lt;/code&gt; 파일 생성&lt;/h2&gt;
 &lt;p&gt;이것도 Outsider님의 블로그에 잘 정리되어 있지만…&lt;/p&gt;
 &lt;p&gt;개념만 말하면, 특정 폴더(아마도 회사의 workplace)에서만 사용될 &lt;code class=&quot;language-text&quot;&gt;.gitconfig&lt;/code&gt;파일을 만드는 것이다.&lt;/p&gt;
@@ -42,8 +46,24 @@
 &lt;p&gt;company-workspace에 있는 특정 프로젝트에 가서
 &lt;code class=&quot;language-text&quot;&gt;git config --list&lt;/code&gt;를 쳐보면 회사에서 쓸 계정이 보인다.&lt;/p&gt;
 &lt;hr&gt;
+&lt;blockquote&gt;
+&lt;h3&gt;추가사항&lt;/h3&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;ssh를 만들었다고해서 다 끝나는건 아니다.
+ssh 생성했으면 ~/.ssh 폴더 안에 &lt;code class=&quot;language-text&quot;&gt;private key&lt;/code&gt;와 &lt;code class=&quot;language-text&quot;&gt;public key&lt;/code&gt;가 생성된다.&lt;/p&gt;
+&lt;p&gt;이를 github의 경우, [Setting] &gt; [SSH and GPG keys] &gt; [New SSH key]
+에서 생성한 public key를 복사해서 넣어주면 된다.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;h4&gt;이것도 귀찮으면&lt;/h4&gt;
+&lt;p&gt;애초에 ssh를 따로 만들지도 말고, 그냥 git 로컬 repo에 입력한 &lt;code class=&quot;language-text&quot;&gt;username&lt;/code&gt;과 &lt;code class=&quot;language-text&quot;&gt;password&lt;/code&gt;를 저장할 수도 있다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;  $ &lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; config credential.helper store&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;hr&gt;
 &lt;p&gt;끗&lt;/p&gt;
-&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;예전부터 Vim을 잘 쓰고 싶다는 생각만 하다가 일단 시작해보자하는 마음에 기존에 사용하고 있던 IDE에 Vim extension을 추가해버렸다. 그리고 한 2주 버벅이면서 되돌리고 싶다 계속 생각했지만, 오기로 버티다 보니깐 꽤나 손에 익게 되었다. 그후로는 server 작업이든, 기타 mac 설정 작업을 할때 vi을 쓸때 속이 시원해지는 마법이 내게도 생겼다. 아쉬운점은 IDE마다 Vim extension의 기능 차이가 있다는.... 혹시나 Vim에 익숙해지고 싶다면 extension 설치를 적극 추천한다. 물론 한동안 manual을 계속 보게 되겠지만...&lt;/code&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[기분 좋게 IE 이슈를 해소하는 방법]]></title><description><![CDATA[리액트 훅스로 IE에서 발생하는 overflow scroll 이슈 해소]]></description><link>https://techoi.github.io/posts/ie-style-issue-solve-with-react-hooks</link><guid isPermaLink="false">https://techoi.github.io/posts/ie-style-issue-solve-with-react-hooks</guid><pubDate>Tue, 18 Jun 2019 20:53:56 GMT</pubDate><content:encoded>&lt;h3&gt;리액트 훅스로 IE에서 발생하는 overflow scroll 이슈 해소&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;h3&gt;에필로그&lt;/h3&gt;
+&lt;p&gt;예전부터 Vim을 잘 쓰고 싶다는 생각만 하다가 일단 시작해보자하는 마음에 기존에 사용하고 있던 IDE에 Vim extension을 추가해버렸다. 그리고 한 2주 버벅이면서 되돌리고 싶다 계속 생각했지만, 오기로 버티다 보니깐 꽤나 손에 익게 되었다. 그후로는 server 작업이든, 기타 mac 설정 작업을 할때 vi을 쓸때 속이 시원해지는 마법이 내게도 생겼다. 아쉬운점은 IDE마다 Vim extension의 기능 차이가 있다는… 혹시나 Vim에 익숙해지고 싶다면 extension 설치를 적극 추천한다. 물론 한동안 manual을 계속 보게 되겠지만…&lt;/p&gt;
+&lt;/blockquote&gt;</content:encoded></item><item><title><![CDATA[기분 좋게 IE 이슈를 해소하는 방법]]></title><description><![CDATA[리액트 훅스로 IE에서 발생하는 overflow scroll 이슈 해소]]></description><link>https://techoi.github.io/posts/ie-style-issue-solve-with-react-hooks</link><guid isPermaLink="false">https://techoi.github.io/posts/ie-style-issue-solve-with-react-hooks</guid><pubDate>Tue, 18 Jun 2019 20:53:56 GMT</pubDate><content:encoded>&lt;h3&gt;리액트 훅스로 IE에서 발생하는 overflow scroll 이슈 해소&lt;/h3&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;em&gt;블로그를 작성할 시간을 내는게 정말 쉽지 않다. 그래도 자주 써보자는 생각이 다시 들게 해준 상황 덕분에 정리한다&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;본론으로 바로 들어간다.&lt;/p&gt;
@@ -136,7 +156,7 @@ Chrome 류에서는 max-height만 가지고 overflow를 쉽게 관리할 수 있
 &lt;p&gt;useEffect를 사용해서 render하는 타이밍마다
 자식의 사이즈를 통해 부모의 height를 동적으로 줄 수 있다.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;사실 이 코드도 보면 고정값으로 120 을 더하고 있는 부분이 있는데, 이는 모달 컴포넌트의 header와 footer의 고정적인 높이의 합이므로 예외로 하자&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;최적의 코드라는 생각은 아니지만, IE를 대응해야하는 &lt;del&gt;조금은 귀찮은&lt;/del&gt; 상황에서 스스로를 위안할 수 있는 접근을 찾다보니…&lt;/p&gt;</content:encoded></item><item><title><![CDATA[첫 시작치고 괜찮다!]]></title><description><![CDATA[Gatsby로 새로운 블로그를 시작했다. github.io]]></description><link>https://techoi.github.io/posts/the-beginning</link><guid isPermaLink="false">https://techoi.github.io/posts/the-beginning</guid><pubDate>Fri, 15 Feb 2019 09:53:56 GMT</pubDate><content:encoded>&lt;h3&gt;굳이 블로그를 만들기까지 해야하나 싶었지만…&lt;/h3&gt;
+&lt;p&gt;최적의 코드라는 생각은 아니지만, IE를 대응해야하는 &lt;del&gt;조금은 귀찮은&lt;/del&gt; 상황에서 스스로를 위안할 수 있는 접근을 찾다보니…&lt;/p&gt;</content:encoded></item><item><title><![CDATA[첫 시작치고 괜찮다!]]></title><description><![CDATA[Gatsby로 새로운 블로그를 시작했다. github.io]]></description><link>https://techoi.github.io/posts/the-beginning</link><guid isPermaLink="false">https://techoi.github.io/posts/the-beginning</guid><pubDate>Fri, 15 Feb 2019 09:53:56 GMT</pubDate><content:encoded>&lt;h3&gt;굳이 블로그를 만들기까지 해야할까 싶었지만…&lt;/h3&gt;
 &lt;hr&gt;
 &lt;p&gt;크게 3가지 이유로 인해 작업을 시작했다.&lt;/p&gt;
 &lt;ol&gt;
@@ -153,5 +173,4 @@ Chrome 류에서는 max-height만 가지고 overflow를 쉽게 관리할 수 있
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;Gatsby&lt;/strong&gt;는 &lt;em&gt;React&lt;/em&gt;와 &lt;em&gt;graphQL&lt;/em&gt;을 사용하고 있기에 커스텀하면서 자연스레 공부하는 꼴이 될 듯?&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;얼마전에 본 &lt;a href=&quot;%22https://www.youtube.com/watch?v=QyxES-SUq_E%22&quot;&gt;2019년 반드시 알아야하는 웹 개발 트렌드 5가지&lt;/a&gt;에서도 언급된 기술 중 2개나 가져가는 트렌디함 이란(사실 serverless 말고는 2018년에도 반드시 알아야할 웹개발 트렌드였을듯…?)  &lt;/p&gt;
-&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;내 스스로를 지켜봐....야지....&lt;/code&gt;&lt;/p&gt;</content:encoded></item></channel></rss>
+&lt;p&gt;얼마전에 본 &lt;a href=&quot;%22https://www.youtube.com/watch?v=QyxES-SUq_E%22&quot;&gt;2019년 반드시 알아야하는 웹 개발 트렌드 5가지&lt;/a&gt;에서도 언급된 기술 중 2개나 가져가는 트렌디함 이란(사실 serverless 말고는 2018년에도 반드시 알아야할 웹개발 트렌드였을듯…?)&lt;/p&gt;</content:encoded></item></channel></rss>
