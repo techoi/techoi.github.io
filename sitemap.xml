@@ -6,7 +6,6 @@
 <url> <loc>https://techoi.github.io/pages/about/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://techoi.github.io/posts/the-beginning</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://techoi.github.io/posts/ie-style-issue-solve-with-react-hooks</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://techoi.github.io/posts/first-draft</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://techoi.github.io/tag/blog</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://techoi.github.io/tag/css</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://techoi.github.io/tag/gatsby</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -14,7 +13,6 @@
 <url> <loc>https://techoi.github.io/tag/ie</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://techoi.github.io/tag/react</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://techoi.github.io/tag/react-hooks</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://techoi.github.io/category/design-culture</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://techoi.github.io/category/diary</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://techoi.github.io/category/tech</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://techoi.github.io/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
