@@ -1,4 +1,97 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[As long as we dare to dream and do not get in the way of ourseleves, anything is possible]]></title><description><![CDATA[Read, Inspired and Write.]]></description><link>https://techoi.github.io</link><generator>RSS for Node</generator><lastBuildDate>Wed, 19 Jun 2019 07:07:42 GMT</lastBuildDate><item><title><![CDATA[First Draft]]></title><link>https://techoi.github.io/posts/first-draft</link><guid isPermaLink="false">https://techoi.github.io/posts/first-draft</guid><pubDate>Sat, 16 Feb 2019 01:45:32 GMT</pubDate><content:encoded>&lt;p&gt;&lt;strong&gt;Pellentesque habitant morbi tristique&lt;/strong&gt; senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. &lt;em&gt;Aenean ultricies mi vitae est.&lt;/em&gt; Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. &lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[As long as we dare to dream and do not get in the way of ourseleves, anything is possible]]></title><description><![CDATA[Read, Inspired and Write.]]></description><link>https://techoi.github.io</link><generator>RSS for Node</generator><lastBuildDate>Fri, 21 Jun 2019 04:15:08 GMT</lastBuildDate><item><title><![CDATA[리액트 훅스로 IE에서 발생하는 overflow scroll 이슈 해소하기]]></title><description><![CDATA[리액트 훅스로 IE에서 발생하는 overflow scroll 이슈 해소하기]]></description><link>https://techoi.github.io/posts/ie-style-issue-solve-with-react-hooks</link><guid isPermaLink="false">https://techoi.github.io/posts/ie-style-issue-solve-with-react-hooks</guid><pubDate>Thu, 20 Jun 2019 20:53:56 GMT</pubDate><content:encoded>&lt;h3&gt;리액트 훅스로 IE에서 발생하는 overflow scroll 이슈 해소하기&lt;/h3&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;em&gt;블로그를 작성할 시간을 내는게 정말 쉽지 않다. 그래도 자주 써보자는 생각이 다시 들게 해준 상황 덕분에 정리한다&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;본론으로 바로 들어간다.&lt;/p&gt;
+&lt;p&gt;이슈는 다음과 같다.
+Chrome 류에서는 max-height만 가지고 overflow를 쉽게 관리할 수 있다.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/2019-06-20/popup-layout.png&quot; alt=&quot;모달 레이아웃&quot;&gt;&lt;/p&gt;
+&lt;p&gt;위의 형태의 레이아웃을 만들기 위해서 Chrome류에서는
+부모 component에  max-height를 주고,
+스크롤을 붙이고 싶은 component에 height와 overflow: auto;를 주면 된다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;css&quot;&gt;&lt;pre class=&quot;language-css&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token selector&quot;&gt;.parent&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;max-height&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 70%&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token selector&quot;&gt;.content&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 85%&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;overflow&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; auto&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;하지만 한국에서 웹서비스를 운영하고 있다면 어김없기 고려해야하는 IE라는 큰 산이 있다.&lt;/p&gt;
+&lt;p&gt;각종 polyfill로 해소할 수 있는 부분은 해소했다 손 치더라도..
+스타일링을 돕는 다양한 속성들이 IE에서는 예상과 다르게 보여질때가 있기에…
+&lt;del&gt;IE 지원안하고싶…&lt;/del&gt; 이를 대응해줄 필요가 있다!&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;위 스타일을 적용하면 IE에서는 부모 component에 스크롤이 붙어버린다.
+그럼 고정하고 싶은 header와 footer가 고정되지 못한다.&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;이를 해결하는 다양한 방식이 있다.&lt;/p&gt;
+&lt;p&gt;가장 간단한 방식은 아마도&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;부모의 사이즈를 고정해버리는 것!&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;css&quot;&gt;&lt;pre class=&quot;language-css&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token selector&quot;&gt;.parent&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 700px&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;딱 봐도 알겠지만, 명료하지만 다양한 경우를 다 담을 수 없다.&lt;/p&gt;
+&lt;p&gt;리액트 컴포넌트의 재사용성을 고려하기 위해 다른 방법을 생각해보다가&lt;/p&gt;
+&lt;h2&gt;React Hooks 를 활용해보기로 했다.&lt;/h2&gt;
+&lt;p&gt;모달 컴포넌트 자체가 애초에 function component였기에  &lt;del&gt;최근 리액트 공식 문서를 다시 읽었기에…&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;요즘은 핫하기도 하지만 어느정도 안정적으로 판단되는 기술들을 새로운 프로젝트에 녹여내는걸로 바쁜 일정에 대한 자기 위안을 삼고 있다(지금 진행하고 있는 신규 프로젝트에는 React, Next.js(SSR), React Hooks, Sass, Type Script, Jest가 기본 골조)&lt;/p&gt;
+&lt;p&gt;모달 컴포넌트는 담기는 내용이 통신 결과에 따라 변경되는 구조이기에 빅 사이즈 경우와 작은 사이즈 경우가 있다.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/2019-06-20/big-size-popup.png&quot; alt=&quot;빅 사이즈 모달&quot;&gt;
+&lt;img src=&quot;/images/2019-06-20/small-size-popup.png&quot; alt=&quot;스몰 사이즈 모달&quot;&gt;&lt;/p&gt;
+&lt;p&gt;목표는 부모 component의 height를 자식(스크롤을 달고 싶은) component의 height에 따라 동적으로 설정하는 것!&lt;/p&gt;
+&lt;p&gt;자식의 사이즈는 동적으로 결정되므로, 컴포넌트가 그려진 다음에 사이즈를 확인해서 부모의 스타일을 바꿔줘야한다.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;자식까지 일단 다 그려진다.&lt;/li&gt;
+&lt;li&gt;자식의 사이즈를 확인한다.&lt;/li&gt;
+&lt;li&gt;자식의 사이즈에 따라 부모의 사이즈를 수정한다.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;리액트 클래스 컴포넌트를 사용하고 있다면 componentDidMount() life cycle에서 자식의 사이즈를 통해 부모의 사이즈를 바꿔주면 될테고,
+바닐라 JS를 사용하고 있다면, JQuery로 load된 후 해당 작업을 하면 될테다.&lt;/p&gt;
+&lt;p&gt;리액트 펑션 컴포넌트를 사용하고 있었다면, 라이프 사이클을 사용하기 위해서 클래스 컴포넌트로 바꾸지말고,
+리액트 훅스를 사용해주자!&lt;/p&gt;
+&lt;h2&gt;React Hooks로 작업한 코드는 다음과 같다.&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;tsx&quot;&gt;&lt;pre class=&quot;language-tsx&quot;&gt;&lt;code class=&quot;language-tsx&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;/* tsx 파일 */&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; React&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; useState&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; useEffect &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;react&apos;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; CheckCategory&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; React&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;SFC&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;Props&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token plain-text&quot;&gt; = () =&gt; &lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; popupBox &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; React&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;createRef&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;HTMLDivElement&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token plain-text&quot;&gt;();
+    let popupWrapper = React.createRef&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;HTMLDivElement&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token plain-text&quot;&gt;();
+
+    useEffect(() =&gt; &lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;popupWrapper&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;current&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+          popupWrapper&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;current&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;style&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;height &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; popupBox&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;current &lt;span class=&quot;token operator&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; popupBox&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;current&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;clientHeight &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;120&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;px&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token plain-text&quot;&gt;);
+
+    return (
+      &lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;div&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token plain-text&quot;&gt;
+          ...
+            &lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;div&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;className&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&apos;&lt;/span&gt;parent&lt;span class=&quot;token punctuation&quot;&gt;&apos;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;ref&lt;/span&gt;&lt;span class=&quot;token script language-javascript&quot;&gt;&lt;span class=&quot;token script-punctuation punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;popupWrapper&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token plain-text&quot;&gt;
+                ...
+                &lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;div&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;className&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&apos;&lt;/span&gt;content&lt;span class=&quot;token punctuation&quot;&gt;&apos;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;ref&lt;/span&gt;&lt;span class=&quot;token script language-javascript&quot;&gt;&lt;span class=&quot;token script-punctuation punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; popupBox &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token plain-text&quot;&gt;
+                    ...
+                &lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;div&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token plain-text&quot;&gt;
+            &lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;div&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token plain-text&quot;&gt;
+      &lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;div&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token plain-text&quot;&gt;
+    )&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;css&quot;&gt;&lt;pre class=&quot;language-css&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;/* sass 파일 */&lt;/span&gt;
+&lt;span class=&quot;token selector&quot;&gt;.parent&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;max-height&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 70%&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token selector&quot;&gt;.content&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;overflow&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; auto&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token atrule&quot;&gt;&lt;span class=&quot;token rule&quot;&gt;@include&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;respond-to&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;pc&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;/* 요건 반응형 대응 코드(sass를 사용하고 있다는?)*/&lt;/span&gt;
+    &lt;span class=&quot;token property&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 1150px&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token property&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 85%&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;useEffect를 사용해서 render하는 타이밍마다
+자식의 사이즈를 통해 부모의 height를 동적으로 줄 수 있다.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;사실 이 코드도 보면 고정값으로 120 을 더하고 있는 부분이 있는데, 이는 모달 컴포넌트의 header와 footer의 고정적인 높이의 합이므로 예외로 하자&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;최적의 코드라는 생각은 아니지만, IE를 대응해야하는 &lt;del&gt;조금은 귀찮은&lt;/del&gt; 상황에서 스스로를 위안할 수 있는 접근을 찾다보니…&lt;/p&gt;</content:encoded></item><item><title><![CDATA[First Draft]]></title><link>https://techoi.github.io/posts/first-draft</link><guid isPermaLink="false">https://techoi.github.io/posts/first-draft</guid><pubDate>Sat, 16 Feb 2019 01:45:32 GMT</pubDate><content:encoded>&lt;p&gt;&lt;strong&gt;Pellentesque habitant morbi tristique&lt;/strong&gt; senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. &lt;em&gt;Aenean ultricies mi vitae est.&lt;/em&gt; Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. &lt;/p&gt;
 &lt;p&gt;Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui.  &lt;a href=&quot;#&quot;&gt;Donec non enim&lt;/a&gt; in turpis pulvinar facilisis.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/media/image-3.jpg&quot; alt=&quot;Nulla faucibus vestibulum eros in tempus. Vestibulum tempor imperdiet velit nec dapibus&quot;&gt;&lt;/p&gt;
 &lt;h2&gt;Header Level 2&lt;/h2&gt;
