@@ -1,4 +1,42 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[As long as we dare to dream and do not get in the way of ourseleves, anything is possible]]></title><description><![CDATA[Read, Inspired and Write.]]></description><link>https://techoi.github.io</link><generator>RSS for Node</generator><lastBuildDate>Fri, 21 Jun 2019 07:58:28 GMT</lastBuildDate><item><title><![CDATA[Git key 생성 및 계정 설정 분리하기]]></title><description><![CDATA[나만의 깃 세팅 구성하기]]></description><link>https://techoi.github.io/posts/seperate-git-user-with-key</link><guid isPermaLink="false">https://techoi.github.io/posts/seperate-git-user-with-key</guid><pubDate>Wed, 19 Jun 2019 20:53:56 GMT</pubDate><content:encoded>&lt;h3&gt;나만의 깃 세팅 구성하기&lt;/h3&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[As long as we dare to dream and do not get in the way of ourseleves, anything is possible]]></title><description><![CDATA[Read, Inspired and Write.]]></description><link>https://techoi.github.io</link><generator>RSS for Node</generator><lastBuildDate>Fri, 21 Jun 2019 11:37:40 GMT</lastBuildDate><item><title><![CDATA[프론트엔드 기술 스택 - 관심분야]]></title><description><![CDATA[서버사이드 리액트 글로벌 웹서비스 리뉴얼]]></description><link>https://techoi.github.io/posts/what-i-am-interested-in</link><guid isPermaLink="false">https://techoi.github.io/posts/what-i-am-interested-in</guid><pubDate>Fri, 21 Jun 2019 11:01:00 GMT</pubDate><content:encoded>&lt;blockquote&gt;
+&lt;h3&gt;서버사이드 리액트 글로벌 웹서비스 리뉴얼&lt;/h3&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;최근 진행한 회사의 신규 프론트엔드 서비스 기술 스택&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;/images/2019-06-21/react-logo.png&quot;&gt;
+&lt;img src=&quot;/images/2019-06-21/next-js-logo.png&quot;&gt;
+&lt;img src=&quot;/images/2019-06-21/typescript-logo.png&quot;&gt;
+&lt;img src=&quot;/images/2019-06-21/sass-logo.png&quot;&gt;
+&lt;img src=&quot;/images/2019-06-21/webpack-logo.jpeg&quot;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;테스트 툴로 선정했지만, 계속 쓰게 될지는 모를 Jest…&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;/images/2019-06-21/jest-logo.png&quot;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;서비스 전반적으로 적용은 힘들겠지만, 그래도 어느정도 조금씩 녹여보고 싶은 기술&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;/images/2019-06-21/serverless-logo.png&quot;&gt;
+&lt;img src=&quot;/images/2019-06-21/graphql-logo.png&quot;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;관심있던 기술을 둘러보고 이것저것 접하기 위해서는 역시 일에다가 적용하는 거지~&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;완전 새롭고 ** Trady ** 한 기술은 아니지만, 어느정도 안정성을 인정받은 기술들이기에..&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3&gt;프론트엔드 개발자가 혼자라서…&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;조금 외롭기하나,&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;정식 문서와 친구먹고, 프론트엔드 커뮤니티에 속할 이유가 되고,
+새로운 프로젝트의 기술 스택 선택에 자유도가 있어서 좋다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;다른 프론트엔드 개발자와의 소통은 &lt;strong&gt;오픈소스&lt;/strong&gt; 활동을 통해서 커버업할 수 있길…&lt;/p&gt;
+&lt;/blockquote&gt;</content:encoded></item><item><title><![CDATA[Git key 생성 및 계정 설정 분리하기]]></title><description><![CDATA[나만의 깃 세팅 구성하기]]></description><link>https://techoi.github.io/posts/seperate-git-user-with-key</link><guid isPermaLink="false">https://techoi.github.io/posts/seperate-git-user-with-key</guid><pubDate>Wed, 19 Jun 2019 20:53:56 GMT</pubDate><content:encoded>&lt;h3&gt;나만의 깃 세팅 구성하기&lt;/h3&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;em&gt;블로그를 작성할 시간을 내는게 정말 쉽지 않다. 그래도 자주 써보자는 생각이 다시 들게 해준 상황 덕분에 정리한다&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;본론으로 바로 들어간다.&lt;/p&gt;
@@ -23,6 +61,8 @@
 
   $ ls // 파일 생성 여부 확인&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;위의 방식을 반복해서 계정마다 키를 생성한다.&lt;/p&gt;
+&lt;p&gt;생성한 키는 에이젠트에 추가&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;  $ ssh-add ~/.ssh/username@github.com&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;SSH 키 관리는 &lt;code class=&quot;language-text&quot;&gt;~/.ssh/config&lt;/code&gt; 파일에서&lt;/p&gt;
 &lt;p&gt;자세한 내용은 &lt;a href=&quot;%22https://blog.outsider.ne.kr/1448%22&quot;&gt;Outsider님의 블로그&lt;/a&gt; 에 잘 정리되어 있다.&lt;/p&gt;
 &lt;blockquote&gt;
@@ -69,7 +109,7 @@ ssh 생성했으면 ~/.ssh 폴더 안에 &lt;code class=&quot;language-text&quot
 &lt;p&gt;본론으로 바로 들어간다.&lt;/p&gt;
 &lt;p&gt;이슈는 다음과 같다.
 Chrome 류에서는 max-height만 가지고 overflow를 쉽게 관리할 수 있다.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/images/2019-06-20/popup-layout.png&quot; alt=&quot;모달 레이아웃&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/2019-06-18/popup-layout.png&quot; alt=&quot;모달 레이아웃&quot;&gt;&lt;/p&gt;
 &lt;p&gt;위의 형태의 레이아웃을 만들기 위해서 Chrome류에서는
 부모 component에  max-height를 주고,
 스크롤을 붙이고 싶은 component에 height와 overflow: auto;를 주면 된다.&lt;/p&gt;
@@ -103,8 +143,8 @@ Chrome 류에서는 max-height만 가지고 overflow를 쉽게 관리할 수 있
 &lt;p&gt;모달 컴포넌트 자체가 애초에 function component였기에  &lt;del&gt;최근 리액트 공식 문서를 다시 읽었기에…&lt;/del&gt;&lt;/p&gt;
 &lt;p&gt;요즘은 핫하기도 하지만 어느정도 안정적으로 판단되는 기술들을 새로운 프로젝트에 녹여내는걸로 바쁜 일정에 대한 자기 위안을 삼고 있다(지금 진행하고 있는 신규 프로젝트에는 React, Next.js(SSR), React Hooks, Sass, Type Script, Jest가 기본 골조)&lt;/p&gt;
 &lt;p&gt;모달 컴포넌트는 담기는 내용이 통신 결과에 따라 변경되는 구조이기에 빅 사이즈 경우와 작은 사이즈 경우가 있다.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/images/2019-06-20/big-size-popup.png&quot; alt=&quot;빅 사이즈 모달&quot;&gt;
-&lt;img src=&quot;/images/2019-06-20/small-size-popup.png&quot; alt=&quot;스몰 사이즈 모달&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/2019-06-18/big-size-popup.png&quot; alt=&quot;빅 사이즈 모달&quot;&gt;
+&lt;img src=&quot;/images/2019-06-18/small-size-popup.png&quot; alt=&quot;스몰 사이즈 모달&quot;&gt;&lt;/p&gt;
 &lt;p&gt;목표는 부모 component의 height를 자식(스크롤을 달고 싶은) component의 height에 따라 동적으로 설정하는 것!&lt;/p&gt;
 &lt;p&gt;자식의 사이즈는 동적으로 결정되므로, 컴포넌트가 그려진 다음에 사이즈를 확인해서 부모의 스타일을 바꿔줘야한다.&lt;/p&gt;
 &lt;ol&gt;
@@ -165,7 +205,7 @@ Chrome 류에서는 max-height만 가지고 overflow를 쉽게 관리할 수 있
 &lt;li&gt;github.io를 써보고 싶다.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;blockquote&gt;
-&lt;p&gt;여러가지 선택지들이 있었지만, jekyll hexo, gatsby 정도를 후보군에 두고 고민하다가… &lt;/p&gt;
+&lt;p&gt;여러가지 선택지들이 있었지만, &lt;code class=&quot;language-text&quot;&gt;jekyll&lt;/code&gt; &lt;code class=&quot;language-text&quot;&gt;hexo&lt;/code&gt; &lt;code class=&quot;language-text&quot;&gt;gatsby&lt;/code&gt; 정도를 후보군에 두고 고민하다가… &lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;(결국에는 gatsby로 선택 뭔가 헤어 왁스 느낌이 나는 이름이지만)&lt;/p&gt;
 &lt;p&gt;기존에 개인용 저장소처럼 사용하던 Evernote와 tistory와는 어떤 차별성을 줘야 할 지 고민되지만 일단 나눠서 가는 쪽으로 생각하고 있다.&lt;/p&gt;
