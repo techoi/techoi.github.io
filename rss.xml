@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[As long as we dare to dream and do not get in the way of ourseleves, anything is possible]]></title><description><![CDATA[Read, Inspired and Write.]]></description><link>https://techoi.github.io</link><generator>RSS for Node</generator><lastBuildDate>Fri, 21 Jun 2019 11:37:40 GMT</lastBuildDate><item><title><![CDATA[프론트엔드 기술 스택 - 관심분야]]></title><description><![CDATA[서버사이드 리액트 글로벌 웹서비스 리뉴얼]]></description><link>https://techoi.github.io/posts/what-i-am-interested-in</link><guid isPermaLink="false">https://techoi.github.io/posts/what-i-am-interested-in</guid><pubDate>Fri, 21 Jun 2019 11:01:00 GMT</pubDate><content:encoded>&lt;blockquote&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Read, Inspired and Write.]]></title><description><![CDATA[As long as we dare to dream and do not get in the way of ourseleves, anything is possible]]></description><link>https://techoi.github.io</link><generator>RSS for Node</generator><lastBuildDate>Mon, 24 Jun 2019 11:07:58 GMT</lastBuildDate><item><title><![CDATA[프론트엔드 기술 스택 - 관심분야]]></title><description><![CDATA[서버사이드 리액트 글로벌 웹서비스 리뉴얼]]></description><link>https://techoi.github.io/posts/what-i-am-interested-in</link><guid isPermaLink="false">https://techoi.github.io/posts/what-i-am-interested-in</guid><pubDate>Fri, 21 Jun 2019 11:01:00 GMT</pubDate><content:encoded>&lt;blockquote&gt;
 &lt;h3&gt;서버사이드 리액트 글로벌 웹서비스 리뉴얼&lt;/h3&gt;
 &lt;/blockquote&gt;
 &lt;hr&gt;
@@ -24,7 +24,7 @@
 &lt;hr&gt;
 &lt;p&gt;관심있던 기술을 둘러보고 이것저것 접하기 위해서는 역시 일에다가 적용하는 거지~&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;완전 새롭고 ** Trady ** 한 기술은 아니지만, 어느정도 안정성을 인정받은 기술들이기에..&lt;/p&gt;
+&lt;p&gt;완전 새로운 기술은 아니지만, 어느정도 안정성을 인정받은 ** Trady ** 한 기술들이기에..&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h3&gt;프론트엔드 개발자가 혼자라서…&lt;/h3&gt;
 &lt;blockquote&gt;
@@ -166,7 +166,8 @@ Chrome 류에서는 max-height만 가지고 overflow를 쉽게 관리할 수 있
 
     useEffect(() =&gt; &lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
         &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;popupWrapper&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;current&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-          popupWrapper&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;current&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;style&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;height &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; popupBox&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;current &lt;span class=&quot;token operator&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; popupBox&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;current&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;clientHeight &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;120&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;px&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+          &lt;span class=&quot;token comment&quot;&gt;// popupWrapper.current.style.height = popupBox.current &amp;amp;&amp;amp; popupBox.current.clientHeight + 120 + &apos;px&apos;; // 코드 수정&lt;/span&gt;
+          popupWrapper&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;current&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;style&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;height &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; popupBox&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;current &lt;span class=&quot;token operator&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; popupBox&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;current&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;style&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;height &lt;span class=&quot;token operator&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; popupBox&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;current&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;style&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;height &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;120&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;px&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
         &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
     &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token plain-text&quot;&gt;);
 
@@ -181,6 +182,10 @@ Chrome 류에서는 max-height만 가지고 overflow를 쉽게 관리할 수 있
             &lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;div&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token plain-text&quot;&gt;
       &lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;div&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token plain-text&quot;&gt;
     )&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&quot;color:#ffa8df&quot; &gt; &lt;strong&gt;코드 수정&lt;/strong&gt;&lt;/span&gt; : clientHeight의 경우 checkbox 요소의 checked 여부에 따라 들쑥날쑥한 현상이 발생
+&lt;code class=&quot;language-text&quot;&gt;clientHeight&lt;/code&gt;를 &lt;code class=&quot;language-text&quot;&gt;style.height&lt;/code&gt;로 변경&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;scss&quot;&gt;&lt;pre class=&quot;language-scss&quot;&gt;&lt;code class=&quot;language-scss&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;/* scss 파일 */&lt;/span&gt;
 &lt;span class=&quot;token selector&quot;&gt;.parent &lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
   &lt;span class=&quot;token property&quot;&gt;max-height&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 70%&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
