@@ -1,5 +1,55 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Read, Inspired and Write.]]></title><description><![CDATA[As long as we dare to dream and do not get in the way of ourseleves, anything is possible]]></description><link>https://techoi.github.io</link><generator>RSS for Node</generator><lastBuildDate>Tue, 25 Jun 2019 10:34:04 GMT</lastBuildDate><item><title><![CDATA[Techoi(테크초이) 메멘토 노트]]></title><description><![CDATA[필요할때마다 구글링하는 것들]]></description><link>https://techoi.github.io/posts/memento</link><guid isPermaLink="false">https://techoi.github.io/posts/memento</guid><pubDate>Tue, 25 Jun 2019 09:32:05 GMT</pubDate><content:encoded>&lt;blockquote&gt;
-&lt;h3&gt;기억하긴 비효율적이고 때마다 찾기도 좀 그런…&lt;/h3&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Read, Inspired and Write.]]></title><description><![CDATA[As long as we dare to dream and do not get in the way of ourseleves, anything is possible]]></description><link>https://techoi.github.io</link><generator>RSS for Node</generator><lastBuildDate>Wed, 26 Jun 2019 08:36:53 GMT</lastBuildDate><item><title><![CDATA[Next.js 서버사이드 랜더링 배포 환경 이중화 고려사항]]></title><description><![CDATA[AWS ec2 인스턴스에 node server를 여러개 두고 이를 ELB로 연결할 경우 고려해야할 사항]]></description><link>https://techoi.github.io/posts/frontend-server-deploy-setup</link><guid isPermaLink="false">https://techoi.github.io/posts/frontend-server-deploy-setup</guid><pubDate>Wed, 26 Jun 2019 09:32:05 GMT</pubDate><content:encoded>&lt;blockquote&gt;
+&lt;h5&gt;AWS ec2 인스턴스에 node server를 여러개 두고 이를 ELB로 연결할 경우 고려해야할 사항&lt;/h5&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;p&gt;결론만 말하면 SSR application을 build할때 build-id를 동일하게 해줘야 ELB를 통해 요청이 인스턴스를 오갈때 문제가 발생하지 않는다.
+마찬가지로 무중단 배포를 고려하고 있다면, ELB의 타겟그룹을 바꿔치기하는 식으로 접근해야 할 것이다.
+또한, build-id로 인한 404 에러가 날 경우는 url를 다시 한번 호출하는 식의 redirect 코드를 넣어 서비스의 연속성을 유지해야할 것이다.&lt;/p&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;h3&gt;SPA와 SEO와 SSR&lt;/h3&gt;
+&lt;p&gt;일반적인 SPA(Single Page Application)의 경우, 프론트엔드 빌드 파일을 사용자에게 서빙하는데
+굳이 노드 서버를 두지 않아도된다.(S3와 cloudfront를 사용해서 서빙하는 경우도 있음)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;일반적인 SPA(React, Vue…) 프레임워크를 통해 어플리케이션을 만들 경우, 결과물을 js파일로 번들링해두고, 이를 사용자(client side)의 브라우저가 해석해서 사용자가 볼 수 있도록 한다.&lt;/p&gt;
+&lt;p&gt;즉, js 파일을 해석할 수 있는 브라우저를 통해야 사용자가 이를 볼 수 있게 된다.&lt;/p&gt;
+&lt;p&gt;웹 어플리케이션을 만들었다면, 이를 더 많은 사용자들이 사용할 수 있도록 서비스를 퍼트리는 작업이 필요하다.
+이를 위해 고려하게 되는 것이 SEO(Search Engine Optimization, 검색 최적화)다.&lt;/p&gt;
+&lt;p&gt;구글느님같은 경우 search engine 봇(bot)이 알아서 node 파일을 실행해서 페이지를 수집해가 주신다지만
+그렇지 않은 몇몇 search engine 봇들은 그렇게 똑똑하지 않다. &lt;del&gt;하려면 할 수 있겠지만 왜 안하는지는 나도 모르겠… 이미 브라우저에서 긁어가는 걸로 충분하단건가..&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;html 와 같은 정적 파일만 읽을줄 아는 봇들이 SPA 어플리케이션의 내용을 읽어가 검색엔진에서 검색되도록 하기 위해서는
+우리가 친히 js 파일을 해석해서 정적 파일로 전해드려야 한다.&lt;/p&gt;
+&lt;p&gt;이를 위해서 우리는 node 서버를 두고, js 파일을 해석해서 정적 파일 형태로 제공하는 기술 SSR(Server Side Render)를 고려하게 된다.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;h3&gt;SSR의 배포 환경과 무중단 배포&lt;/h3&gt;
+&lt;/blockquote&gt;
+&lt;h5&gt;백엔드의 배포 환경은 구성하기 나름이겠지만 도커를 사용하는 경우와 AWS에서 제공하는 Code Deploy를 사용하는 경우가 거의 대부분을 인 것같다. ~~ 이 두가지만 경험이 있..~~ 프론트엔드의 경우는 pm2를 통해서 인스턴스를 관리하는 것만으로도 충분한 경우가 많겠지만…&lt;/h5&gt;
+&lt;p&gt;일반적인 배포환경&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Docker를 사용하는 경우, Rancher나 Docker-Swarm, Kubernetes를 통해 인스턴스들을 관리&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;AWS 인스턴스를 Code Deploy로 관리&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;pm2를 사용하여 다중 인스턴스를 관리&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;서비스를 업데이트하는 과정에서 사용자의 사용성을 최대한 해치지 않기 위해서는 무중단 배포(Continuous Delivery)를 고려해야 한다.
+(Blue-Green 배포, Canary 배포… 등의 방법론이 있음)&lt;/p&gt;
+&lt;p&gt;당연한 이야기이겠지만, 어떤 방식으로 배포를 하더라도 완전한 무중단 배포는 불가능하지 않을까 싶다. 그럼에도 최대한 안정적으로 서비스를 제공할 수 있는 방식을 추구해야…&lt;/p&gt;
+&lt;p&gt;본론으로 돌아가서&lt;/p&gt;
+&lt;p&gt;SPA는 js 파일로 어플리케이션을 build하는데 이때, webpack과 같은 번들링 툴들이 알아서 hash 값 등으로 static 파일들의 이름을 정해버린다.(옵션을 통해서 파일이름을 특정 규칙으로 만들어줄 수도 있음)&lt;/p&gt;
+&lt;p&gt;만약, ELB로 여러 인스턴스를 묶어놨는데, 각 인스턴스마다 다른 파일 이름을 바라보고 있다면 서버에서 파일을 찾을 수 없다는 404 에러코드를 영접하게 된다.&lt;/p&gt;
+&lt;p&gt;이를 해소하는 방법은 간단하다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;모든 인스턴스가 같은 build를 바라보면 됨&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Docker를 사용하는 경우, build 파일을 담고 있는 Volume을 share하면 됨&lt;/li&gt;
+&lt;li&gt;Code Deploy로 관리하는 경우, build 파일을 만드는 전용 인스턴스를 하나두고, 이 파일을 s3에 올려서 code deploy가 인스턴스를 생성할때 이 파일을 다운받도록 하면 됨&lt;/li&gt;
+&lt;li&gt;pm2의 경우, 어차피 -i 옵션으로 instance들을 여러개 켰다면 하나의 빌드파일을 보고 있을 것이라 고려 불필요일듯(?)&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Techoi(테크초이) 메멘토 노트]]></title><description><![CDATA[필요할때마다 구글링하는 것들]]></description><link>https://techoi.github.io/posts/memento</link><guid isPermaLink="false">https://techoi.github.io/posts/memento</guid><pubDate>Tue, 25 Jun 2019 09:32:05 GMT</pubDate><content:encoded>&lt;blockquote&gt;
+&lt;h5&gt;기억하긴 비효율적이고 때마다 찾기도 좀 그런…&lt;/h5&gt;
 &lt;/blockquote&gt;
 &lt;hr&gt;
 &lt;blockquote&gt;
@@ -28,6 +78,21 @@
 &lt;li&gt;상하는 같고 좌우는 다를때는 각각 써줘야함…&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
+&lt;blockquote&gt;
+&lt;h3&gt;node&lt;/h3&gt;
+&lt;/blockquote&gt;
+&lt;h4&gt;pm2 .json에 npm script args 실행&lt;/h4&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;json&quot;&gt;&lt;pre class=&quot;language-json&quot;&gt;&lt;code class=&quot;language-json&quot;&gt;  &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token property&quot;&gt;&quot;apps&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;token property&quot;&gt;&quot;name&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;waug_react_beta&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+            &lt;span class=&quot;token property&quot;&gt;&quot;script&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;npm&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+            &lt;span class=&quot;token property&quot;&gt;&quot;args&quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;run -- dev&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+            &lt;span class=&quot;token property&quot;&gt;&quot;watch&quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;start, test 등 npm run 없이 실행가능한 예약어들은 “args”: “start” 만 해도되지만, 예약안된 custom scripts는 &lt;code class=&quot;language-text&quot;&gt;--&lt;/code&gt; 로 args 연결 필요&lt;/p&gt;
 &lt;p&gt;To bo continue…&lt;/p&gt;</content:encoded></item><item><title><![CDATA[프론트엔드 기술 스택 - 관심분야]]></title><description><![CDATA[서버사이드 리액트 글로벌 웹서비스 리뉴얼]]></description><link>https://techoi.github.io/posts/what-i-am-interested-in</link><guid isPermaLink="false">https://techoi.github.io/posts/what-i-am-interested-in</guid><pubDate>Fri, 21 Jun 2019 11:01:00 GMT</pubDate><content:encoded>&lt;blockquote&gt;
 &lt;h3&gt;서버사이드 리액트 글로벌 웹서비스 리뉴얼&lt;/h3&gt;
 &lt;/blockquote&gt;
