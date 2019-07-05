@@ -9,182 +9,200 @@
 /sw.js
   Cache-Control: no-cache
 /offline-plugin-app-shell-fallback/
-  Link: </webpack-runtime-21e09de912e6e24cf71c.js>; rel=preload; as=script
+  Link: </webpack-runtime-ed2dadcf1a17fa697767.js>; rel=preload; as=script
   Link: </component---node-modules-gatsby-plugin-offline-app-shell-js-237ab0d1122d22ef9f47.js>; rel=preload; as=script
 /404
-  Link: </webpack-runtime-21e09de912e6e24cf71c.js>; rel=preload; as=script
+  Link: </webpack-runtime-ed2dadcf1a17fa697767.js>; rel=preload; as=script
   Link: </0-c39ae294421d3bd766d0.js>; rel=preload; as=script
 /tags
-  Link: </webpack-runtime-21e09de912e6e24cf71c.js>; rel=preload; as=script
+  Link: </webpack-runtime-ed2dadcf1a17fa697767.js>; rel=preload; as=script
   Link: </0-c39ae294421d3bd766d0.js>; rel=preload; as=script
 /categories
-  Link: </webpack-runtime-21e09de912e6e24cf71c.js>; rel=preload; as=script
+  Link: </webpack-runtime-ed2dadcf1a17fa697767.js>; rel=preload; as=script
   Link: </0-c39ae294421d3bd766d0.js>; rel=preload; as=script
 /pages/about/
-  Link: </webpack-runtime-21e09de912e6e24cf71c.js>; rel=preload; as=script
+  Link: </webpack-runtime-ed2dadcf1a17fa697767.js>; rel=preload; as=script
   Link: </0-c39ae294421d3bd766d0.js>; rel=preload; as=script
 /pages/contacts/
-  Link: </webpack-runtime-21e09de912e6e24cf71c.js>; rel=preload; as=script
+  Link: </webpack-runtime-ed2dadcf1a17fa697767.js>; rel=preload; as=script
   Link: </0-c39ae294421d3bd766d0.js>; rel=preload; as=script
 /posts/the-beginning
-  Link: </webpack-runtime-21e09de912e6e24cf71c.js>; rel=preload; as=script
-  Link: </0-c39ae294421d3bd766d0.js>; rel=preload; as=script
-/posts/ie-style-issue-solve-with-react-hooks
-  Link: </webpack-runtime-21e09de912e6e24cf71c.js>; rel=preload; as=script
-  Link: </0-c39ae294421d3bd766d0.js>; rel=preload; as=script
-/posts/what-i-am-interested-in
-  Link: </webpack-runtime-21e09de912e6e24cf71c.js>; rel=preload; as=script
-  Link: </0-c39ae294421d3bd766d0.js>; rel=preload; as=script
-/posts/seperate-git-user-with-key
-  Link: </webpack-runtime-21e09de912e6e24cf71c.js>; rel=preload; as=script
+  Link: </webpack-runtime-ed2dadcf1a17fa697767.js>; rel=preload; as=script
   Link: </0-c39ae294421d3bd766d0.js>; rel=preload; as=script
 /posts/memento
-  Link: </webpack-runtime-21e09de912e6e24cf71c.js>; rel=preload; as=script
+  Link: </webpack-runtime-ed2dadcf1a17fa697767.js>; rel=preload; as=script
   Link: </0-c39ae294421d3bd766d0.js>; rel=preload; as=script
-/posts/react-intl
-  Link: </webpack-runtime-21e09de912e6e24cf71c.js>; rel=preload; as=script
+/posts/seperate-git-user-with-key
+  Link: </webpack-runtime-ed2dadcf1a17fa697767.js>; rel=preload; as=script
   Link: </0-c39ae294421d3bd766d0.js>; rel=preload; as=script
-/posts/just-for-fun-cheerio-crawler
-  Link: </webpack-runtime-21e09de912e6e24cf71c.js>; rel=preload; as=script
+/posts/ie-style-issue-solve-with-react-hooks
+  Link: </webpack-runtime-ed2dadcf1a17fa697767.js>; rel=preload; as=script
+  Link: </0-c39ae294421d3bd766d0.js>; rel=preload; as=script
+/posts/what-i-am-interested-in
+  Link: </webpack-runtime-ed2dadcf1a17fa697767.js>; rel=preload; as=script
   Link: </0-c39ae294421d3bd766d0.js>; rel=preload; as=script
 /posts/frontend-server-deploy-setup
-  Link: </webpack-runtime-21e09de912e6e24cf71c.js>; rel=preload; as=script
+  Link: </webpack-runtime-ed2dadcf1a17fa697767.js>; rel=preload; as=script
+  Link: </0-c39ae294421d3bd766d0.js>; rel=preload; as=script
+/posts/react-intl
+  Link: </webpack-runtime-ed2dadcf1a17fa697767.js>; rel=preload; as=script
+  Link: </0-c39ae294421d3bd766d0.js>; rel=preload; as=script
+/posts/just-for-fun-cheerio-crawler
+  Link: </webpack-runtime-ed2dadcf1a17fa697767.js>; rel=preload; as=script
   Link: </0-c39ae294421d3bd766d0.js>; rel=preload; as=script
 /posts/sentry-io
-  Link: </webpack-runtime-21e09de912e6e24cf71c.js>; rel=preload; as=script
+  Link: </webpack-runtime-ed2dadcf1a17fa697767.js>; rel=preload; as=script
+  Link: </0-c39ae294421d3bd766d0.js>; rel=preload; as=script
+/posts/ios-click-event-issue
+  Link: </webpack-runtime-ed2dadcf1a17fa697767.js>; rel=preload; as=script
   Link: </0-c39ae294421d3bd766d0.js>; rel=preload; as=script
 /tag/aws
-  Link: </webpack-runtime-21e09de912e6e24cf71c.js>; rel=preload; as=script
+  Link: </webpack-runtime-ed2dadcf1a17fa697767.js>; rel=preload; as=script
   Link: </0-c39ae294421d3bd766d0.js>; rel=preload; as=script
 /tag/bash
-  Link: </webpack-runtime-21e09de912e6e24cf71c.js>; rel=preload; as=script
+  Link: </webpack-runtime-ed2dadcf1a17fa697767.js>; rel=preload; as=script
   Link: </0-c39ae294421d3bd766d0.js>; rel=preload; as=script
 /tag/blog
-  Link: </webpack-runtime-21e09de912e6e24cf71c.js>; rel=preload; as=script
+  Link: </webpack-runtime-ed2dadcf1a17fa697767.js>; rel=preload; as=script
   Link: </0-c39ae294421d3bd766d0.js>; rel=preload; as=script
 /tag/css
-  Link: </webpack-runtime-21e09de912e6e24cf71c.js>; rel=preload; as=script
+  Link: </webpack-runtime-ed2dadcf1a17fa697767.js>; rel=preload; as=script
   Link: </0-c39ae294421d3bd766d0.js>; rel=preload; as=script
 /tag/cheer-io
-  Link: </webpack-runtime-21e09de912e6e24cf71c.js>; rel=preload; as=script
+  Link: </webpack-runtime-ed2dadcf1a17fa697767.js>; rel=preload; as=script
+  Link: </0-c39ae294421d3bd766d0.js>; rel=preload; as=script
+/tag/chrome
+  Link: </webpack-runtime-ed2dadcf1a17fa697767.js>; rel=preload; as=script
+  Link: </0-c39ae294421d3bd766d0.js>; rel=preload; as=script
+/tag/click-event
+  Link: </webpack-runtime-ed2dadcf1a17fa697767.js>; rel=preload; as=script
   Link: </0-c39ae294421d3bd766d0.js>; rel=preload; as=script
 /tag/crawler
-  Link: </webpack-runtime-21e09de912e6e24cf71c.js>; rel=preload; as=script
+  Link: </webpack-runtime-ed2dadcf1a17fa697767.js>; rel=preload; as=script
   Link: </0-c39ae294421d3bd766d0.js>; rel=preload; as=script
 /tag/dev-ops
-  Link: </webpack-runtime-21e09de912e6e24cf71c.js>; rel=preload; as=script
+  Link: </webpack-runtime-ed2dadcf1a17fa697767.js>; rel=preload; as=script
   Link: </0-c39ae294421d3bd766d0.js>; rel=preload; as=script
 /tag/do-not-need-to-remember-but
-  Link: </webpack-runtime-21e09de912e6e24cf71c.js>; rel=preload; as=script
+  Link: </webpack-runtime-ed2dadcf1a17fa697767.js>; rel=preload; as=script
   Link: </0-c39ae294421d3bd766d0.js>; rel=preload; as=script
 /tag/elb
-  Link: </webpack-runtime-21e09de912e6e24cf71c.js>; rel=preload; as=script
+  Link: </webpack-runtime-ed2dadcf1a17fa697767.js>; rel=preload; as=script
   Link: </0-c39ae294421d3bd766d0.js>; rel=preload; as=script
 /tag/error
-  Link: </webpack-runtime-21e09de912e6e24cf71c.js>; rel=preload; as=script
+  Link: </webpack-runtime-ed2dadcf1a17fa697767.js>; rel=preload; as=script
   Link: </0-c39ae294421d3bd766d0.js>; rel=preload; as=script
 /tag/frontend
-  Link: </webpack-runtime-21e09de912e6e24cf71c.js>; rel=preload; as=script
+  Link: </webpack-runtime-ed2dadcf1a17fa697767.js>; rel=preload; as=script
   Link: </0-c39ae294421d3bd766d0.js>; rel=preload; as=script
 /tag/gatsby
-  Link: </webpack-runtime-21e09de912e6e24cf71c.js>; rel=preload; as=script
+  Link: </webpack-runtime-ed2dadcf1a17fa697767.js>; rel=preload; as=script
   Link: </0-c39ae294421d3bd766d0.js>; rel=preload; as=script
 /tag/git
-  Link: </webpack-runtime-21e09de912e6e24cf71c.js>; rel=preload; as=script
+  Link: </webpack-runtime-ed2dadcf1a17fa697767.js>; rel=preload; as=script
   Link: </0-c39ae294421d3bd766d0.js>; rel=preload; as=script
 /tag/github-io
-  Link: </webpack-runtime-21e09de912e6e24cf71c.js>; rel=preload; as=script
+  Link: </webpack-runtime-ed2dadcf1a17fa697767.js>; rel=preload; as=script
   Link: </0-c39ae294421d3bd766d0.js>; rel=preload; as=script
 /tag/global
-  Link: </webpack-runtime-21e09de912e6e24cf71c.js>; rel=preload; as=script
+  Link: </webpack-runtime-ed2dadcf1a17fa697767.js>; rel=preload; as=script
   Link: </0-c39ae294421d3bd766d0.js>; rel=preload; as=script
 /tag/global-service
-  Link: </webpack-runtime-21e09de912e6e24cf71c.js>; rel=preload; as=script
+  Link: </webpack-runtime-ed2dadcf1a17fa697767.js>; rel=preload; as=script
   Link: </0-c39ae294421d3bd766d0.js>; rel=preload; as=script
 /tag/ie
-  Link: </webpack-runtime-21e09de912e6e24cf71c.js>; rel=preload; as=script
+  Link: </webpack-runtime-ed2dadcf1a17fa697767.js>; rel=preload; as=script
   Link: </0-c39ae294421d3bd766d0.js>; rel=preload; as=script
 /tag/jest
-  Link: </webpack-runtime-21e09de912e6e24cf71c.js>; rel=preload; as=script
+  Link: </webpack-runtime-ed2dadcf1a17fa697767.js>; rel=preload; as=script
   Link: </0-c39ae294421d3bd766d0.js>; rel=preload; as=script
 /tag/just-for-fun
-  Link: </webpack-runtime-21e09de912e6e24cf71c.js>; rel=preload; as=script
+  Link: </webpack-runtime-ed2dadcf1a17fa697767.js>; rel=preload; as=script
   Link: </0-c39ae294421d3bd766d0.js>; rel=preload; as=script
 /tag/languages
-  Link: </webpack-runtime-21e09de912e6e24cf71c.js>; rel=preload; as=script
+  Link: </webpack-runtime-ed2dadcf1a17fa697767.js>; rel=preload; as=script
   Link: </0-c39ae294421d3bd766d0.js>; rel=preload; as=script
 /tag/log
-  Link: </webpack-runtime-21e09de912e6e24cf71c.js>; rel=preload; as=script
+  Link: </webpack-runtime-ed2dadcf1a17fa697767.js>; rel=preload; as=script
   Link: </0-c39ae294421d3bd766d0.js>; rel=preload; as=script
 /tag/memento
-  Link: </webpack-runtime-21e09de912e6e24cf71c.js>; rel=preload; as=script
+  Link: </webpack-runtime-ed2dadcf1a17fa697767.js>; rel=preload; as=script
   Link: </0-c39ae294421d3bd766d0.js>; rel=preload; as=script
 /tag/memo
-  Link: </webpack-runtime-21e09de912e6e24cf71c.js>; rel=preload; as=script
+  Link: </webpack-runtime-ed2dadcf1a17fa697767.js>; rel=preload; as=script
+  Link: </0-c39ae294421d3bd766d0.js>; rel=preload; as=script
+/tag/mobile-web
+  Link: </webpack-runtime-ed2dadcf1a17fa697767.js>; rel=preload; as=script
   Link: </0-c39ae294421d3bd766d0.js>; rel=preload; as=script
 /tag/next-js
-  Link: </webpack-runtime-21e09de912e6e24cf71c.js>; rel=preload; as=script
+  Link: </webpack-runtime-ed2dadcf1a17fa697767.js>; rel=preload; as=script
   Link: </0-c39ae294421d3bd766d0.js>; rel=preload; as=script
 /tag/node-js
-  Link: </webpack-runtime-21e09de912e6e24cf71c.js>; rel=preload; as=script
+  Link: </webpack-runtime-ed2dadcf1a17fa697767.js>; rel=preload; as=script
   Link: </0-c39ae294421d3bd766d0.js>; rel=preload; as=script
 /tag/react
-  Link: </webpack-runtime-21e09de912e6e24cf71c.js>; rel=preload; as=script
+  Link: </webpack-runtime-ed2dadcf1a17fa697767.js>; rel=preload; as=script
   Link: </0-c39ae294421d3bd766d0.js>; rel=preload; as=script
 /tag/react-hooks
-  Link: </webpack-runtime-21e09de912e6e24cf71c.js>; rel=preload; as=script
+  Link: </webpack-runtime-ed2dadcf1a17fa697767.js>; rel=preload; as=script
   Link: </0-c39ae294421d3bd766d0.js>; rel=preload; as=script
 /tag/react-intl
-  Link: </webpack-runtime-21e09de912e6e24cf71c.js>; rel=preload; as=script
+  Link: </webpack-runtime-ed2dadcf1a17fa697767.js>; rel=preload; as=script
   Link: </0-c39ae294421d3bd766d0.js>; rel=preload; as=script
 /tag/report
-  Link: </webpack-runtime-21e09de912e6e24cf71c.js>; rel=preload; as=script
+  Link: </webpack-runtime-ed2dadcf1a17fa697767.js>; rel=preload; as=script
   Link: </0-c39ae294421d3bd766d0.js>; rel=preload; as=script
 /tag/seo
-  Link: </webpack-runtime-21e09de912e6e24cf71c.js>; rel=preload; as=script
+  Link: </webpack-runtime-ed2dadcf1a17fa697767.js>; rel=preload; as=script
   Link: </0-c39ae294421d3bd766d0.js>; rel=preload; as=script
 /tag/ssr
-  Link: </webpack-runtime-21e09de912e6e24cf71c.js>; rel=preload; as=script
+  Link: </webpack-runtime-ed2dadcf1a17fa697767.js>; rel=preload; as=script
+  Link: </0-c39ae294421d3bd766d0.js>; rel=preload; as=script
+/tag/safari
+  Link: </webpack-runtime-ed2dadcf1a17fa697767.js>; rel=preload; as=script
   Link: </0-c39ae294421d3bd766d0.js>; rel=preload; as=script
 /tag/sass
-  Link: </webpack-runtime-21e09de912e6e24cf71c.js>; rel=preload; as=script
+  Link: </webpack-runtime-ed2dadcf1a17fa697767.js>; rel=preload; as=script
   Link: </0-c39ae294421d3bd766d0.js>; rel=preload; as=script
 /tag/sentry-io
-  Link: </webpack-runtime-21e09de912e6e24cf71c.js>; rel=preload; as=script
+  Link: </webpack-runtime-ed2dadcf1a17fa697767.js>; rel=preload; as=script
   Link: </0-c39ae294421d3bd766d0.js>; rel=preload; as=script
 /tag/shell
-  Link: </webpack-runtime-21e09de912e6e24cf71c.js>; rel=preload; as=script
+  Link: </webpack-runtime-ed2dadcf1a17fa697767.js>; rel=preload; as=script
   Link: </0-c39ae294421d3bd766d0.js>; rel=preload; as=script
 /tag/typescript
-  Link: </webpack-runtime-21e09de912e6e24cf71c.js>; rel=preload; as=script
+  Link: </webpack-runtime-ed2dadcf1a17fa697767.js>; rel=preload; as=script
   Link: </0-c39ae294421d3bd766d0.js>; rel=preload; as=script
 /tag/web-scraping
-  Link: </webpack-runtime-21e09de912e6e24cf71c.js>; rel=preload; as=script
+  Link: </webpack-runtime-ed2dadcf1a17fa697767.js>; rel=preload; as=script
   Link: </0-c39ae294421d3bd766d0.js>; rel=preload; as=script
 /tag/webpack
-  Link: </webpack-runtime-21e09de912e6e24cf71c.js>; rel=preload; as=script
+  Link: </webpack-runtime-ed2dadcf1a17fa697767.js>; rel=preload; as=script
   Link: </0-c39ae294421d3bd766d0.js>; rel=preload; as=script
 /tag/webtoon
-  Link: </webpack-runtime-21e09de912e6e24cf71c.js>; rel=preload; as=script
+  Link: </webpack-runtime-ed2dadcf1a17fa697767.js>; rel=preload; as=script
+  Link: </0-c39ae294421d3bd766d0.js>; rel=preload; as=script
+/tag/i-os
+  Link: </webpack-runtime-ed2dadcf1a17fa697767.js>; rel=preload; as=script
   Link: </0-c39ae294421d3bd766d0.js>; rel=preload; as=script
 /tag/npm
-  Link: </webpack-runtime-21e09de912e6e24cf71c.js>; rel=preload; as=script
+  Link: </webpack-runtime-ed2dadcf1a17fa697767.js>; rel=preload; as=script
   Link: </0-c39ae294421d3bd766d0.js>; rel=preload; as=script
 /category/diary
-  Link: </webpack-runtime-21e09de912e6e24cf71c.js>; rel=preload; as=script
+  Link: </webpack-runtime-ed2dadcf1a17fa697767.js>; rel=preload; as=script
   Link: </0-c39ae294421d3bd766d0.js>; rel=preload; as=script
 /category/tech
-  Link: </webpack-runtime-21e09de912e6e24cf71c.js>; rel=preload; as=script
+  Link: </webpack-runtime-ed2dadcf1a17fa697767.js>; rel=preload; as=script
   Link: </0-c39ae294421d3bd766d0.js>; rel=preload; as=script
 /category/tech/page/1
-  Link: </webpack-runtime-21e09de912e6e24cf71c.js>; rel=preload; as=script
+  Link: </webpack-runtime-ed2dadcf1a17fa697767.js>; rel=preload; as=script
   Link: </0-c39ae294421d3bd766d0.js>; rel=preload; as=script
 /
-  Link: </webpack-runtime-21e09de912e6e24cf71c.js>; rel=preload; as=script
+  Link: </webpack-runtime-ed2dadcf1a17fa697767.js>; rel=preload; as=script
   Link: </0-c39ae294421d3bd766d0.js>; rel=preload; as=script
 /page/1
-  Link: </webpack-runtime-21e09de912e6e24cf71c.js>; rel=preload; as=script
+  Link: </webpack-runtime-ed2dadcf1a17fa697767.js>; rel=preload; as=script
   Link: </0-c39ae294421d3bd766d0.js>; rel=preload; as=script
 /page/2
-  Link: </webpack-runtime-21e09de912e6e24cf71c.js>; rel=preload; as=script
+  Link: </webpack-runtime-ed2dadcf1a17fa697767.js>; rel=preload; as=script
   Link: </0-c39ae294421d3bd766d0.js>; rel=preload; as=script
