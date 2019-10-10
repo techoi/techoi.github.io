@@ -16,6 +16,7 @@
 <url> <loc>https://techoi.github.io/posts/ios-click-event-issue</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://techoi.github.io/posts/word-comparison-algorithm</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://techoi.github.io/posts/the-software-craftsman</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://techoi.github.io/posts/waugtravel</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://techoi.github.io/tag/aws</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://techoi.github.io/tag/algorithm</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://techoi.github.io/tag/bash</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -40,6 +41,7 @@
 <url> <loc>https://techoi.github.io/tag/global</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://techoi.github.io/tag/global-service</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://techoi.github.io/tag/ie</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://techoi.github.io/tag/immer</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://techoi.github.io/tag/jest</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://techoi.github.io/tag/just-for-fun</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://techoi.github.io/tag/languages</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -53,13 +55,17 @@
 <url> <loc>https://techoi.github.io/tag/pride</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://techoi.github.io/tag/professionalism</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://techoi.github.io/tag/react</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://techoi.github.io/tag/react/page/1</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://techoi.github.io/tag/react-hooks</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://techoi.github.io/tag/react-intl</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://techoi.github.io/tag/redux</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://techoi.github.io/tag/report</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://techoi.github.io/tag/seo</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://techoi.github.io/tag/ssr</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://techoi.github.io/tag/safari</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://techoi.github.io/tag/saga</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://techoi.github.io/tag/sass</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://techoi.github.io/tag/sentry</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://techoi.github.io/tag/sentry-io</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://techoi.github.io/tag/shell</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://techoi.github.io/tag/the-software-craftsman</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -77,4 +83,5 @@
 <url> <loc>https://techoi.github.io/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://techoi.github.io/page/1</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://techoi.github.io/page/2</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://techoi.github.io/page/3</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 </urlset>
